@@ -48,30 +48,36 @@ Given the uneven distribution of groups, we introduce an equalization coefficien
 
 ### 3. Average Rating Position 🌟:
 Extract insights from historical data to compute an average ranking position:
-    $$ P = \sum_{i\in S}\frac{S[i]}{|S|} $$
+    
+$$P = \sum_{i\in S}\frac{S[i]}{|S|}$$
 
 ### 4. Average Grade Calculation 📚:
 Determine the student's average grade:
-    $$ X = \sum_{i\in S}\frac{R[i]}{|S|} $$
+    
+$$X = \sum_{i\in S}\frac{R[i]}{|S|}$$
+
 > Note: S represents the set of semesters.
 
 ### 5. Success Metric 🏆:
 Defining success:
-    $$ J = e^{\frac{f(i)}{X}} $$
+    
+$$J = e^{\frac{f(i)}{X}}$$
 
 ### 6. Random Variable 🎲:
 Capture the student's enrollment uncertainty:
-    $$ u=-tR\pi e^{\pi}, 0 \le R \le 1 $$
+    
+$$ u=-tR\pi e^{\pi}, 0 \le R \le 1 $$
 
 ### 7. Foreign University Enrollment Temptation ✈️:
 Higher grades might tempt students to enroll abroad:
-    $$ M = -\frac{2^{\frac{X}{tP}}}{P} $$
+    
+$$ M = -\frac{2^{\frac{X}{tP}}}{P} $$
 
 ---
 
 ## 📝 Resulting Equation:
 
-$$ A = w u + J + M $$
+$$A = w u + J + M$$
 
 Here, `A` represents the final enrollment decision based on all the factors discussed above.
 
